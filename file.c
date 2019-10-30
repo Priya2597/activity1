@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum(float,int);
-int multi(float,int);
+int sum(int,int);
+int multi(int,int);
 
 void main()
 {
-    float a=10;
-    int b=20;
+    int a=10;b=20;
     int c;
     int d;
     printf("Enter c:");
     scanf("%d",&c);
 
-    int (*fptr)(float,int);
+    int (*fptr)(int,int);
     if(c==1)
         fptr=sum;
     else
@@ -22,12 +21,12 @@ void main()
     printf("%d",d);
 }
 
-int sum(float x,int y)
+int sum(int x,int y)
 {
     return x+y;
 
 }
-int multi(float x,int y)
+int multi(int x,int y)
 {
     return x*y;
 
