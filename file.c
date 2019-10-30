@@ -6,7 +6,7 @@ int multi(int,int);
 
 void main()
 {
-    int a=10;b=20;
+    int a=10,b=20;
     int c;
     int d;
     printf("Enter c:");
